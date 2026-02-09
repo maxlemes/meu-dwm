@@ -65,7 +65,8 @@ static const char unknown_str[] = "n/a";
  * wifi_perc           WiFi signal in percent          interface name (wlan0)
  */
 static const struct arg args[] = {
-    { wifi_essid,     "📶 %s ",         "wlp2s0" },
+    { wifi_essid,     "📶 %s ",         "wlp3s0" },
+    { battery_perc,   "🔋%s%% ",       "BAT0" },
     { run_command,    "🔊%s ", "amixer get Master | grep -o '[0-9]*%' | head -1" },
     { datetime,       "🕒%s",          "%d/%m/%Y %H:%M:%S" },
 };
